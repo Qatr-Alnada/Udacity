@@ -1,0 +1,47 @@
+@import url(./css/more.css);
+body {
+    text-align: center;
+}
+.container {
+    display:grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "ha ha ha ha"
+    "sa mn mn mn"
+    "sa mn mn mn"
+    "sa mn mn mn"
+    "fa fa fa fa"
+
+}
+.container > * {
+    padding: 30px;
+    background-color: rgb(252, 238, 252);
+    
+}
+
+header {
+    grid-area: ha;
+}
+aside {
+    grid-area: sa;
+}
+main {
+    grid-area: mn;
+}
+footer {
+    grid-area: fa;
+}
+#tepography{
+    text-align:left;
+    color:rgb(13, 10, 240);
+    width:60%;
+    line-height: 1.5em;
+    
+}
+#qoute {
+    quotes:calc(1em) ;
+    text-decoration: underline;
+    color:#8a817e;
+    font-weight: bold;
+    font-style: italic;
+}

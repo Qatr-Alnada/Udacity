@@ -1,0 +1,97 @@
+@import url(./css/main.css);
+.navbar {   
+    margin:0;
+    background-color: #23475f;
+    text-align: center;
+    padding: 0;
+    transition-duration: .2s;
+    list-style:none;
+    text-transform: capitalize;
+    line-height: 50px;
+}
+.navbar a:hover {
+    background-color: #f3b6b6;
+}
+.navbar li{
+    display:inline-block;
+}
+
+.navbar a{
+    display:block;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 50px;
+    padding: 0 20px;
+}
+@media screen and (min-width:1024px) {
+    nav ul {
+        flex-direction: column;
+        background-color: red;
+        text-align: center;
+    }
+    li{
+        border-bottom:1px dashed #fff;
+    }
+
+--------------------------------------------------------------------------------
+var _dockPanel;
+var content = document.createElement('div');
+content.innerHTML = "";
+var liststart = document.createElement('ul');
+var listelement1 = document.createElement('li');
+var listelement2 = document.createElement('li');
+listelement1.innerHTML = '<a href="#tabs-1">One</a>';
+listelement2.innerHTML = '<a href="#tabs-2">Two</a>';
+liststart.appendChild(listelement1);
+liststart.appendChild(listelement2);
+var t1 = document.createElement('div');
+var t2 = document.createElement('div');
+
+t1.id = "tabs-1";
+t2.id = "tabs-2";
+
+t1.innerHTML = "Tab 1";
+t2.innerHTML = "Tab 2";
+
+content.appendChild(liststart);
+content.appendChild(t1);
+content.appendChild(t2);
+var html = [
+  '<div>',
+  '<nav class="navbar navbar-default">',
+
+  '<ul class="nav navbar-nav">',
+  '<li class="active"><a href="#">Home</a></li>',
+  ' <li><a href="#">Page 1</a></li>',
+  '<li><a href="#">Page 2</a></li>',
+  '</ul>',
+
+  '</nav>',
+  '</div>'
+].join('\n');
+
+_dockPanel.container.append(content);
+   
+} 
+@media screen and (min-width:758px)and (max-width:1023px) {
+    nav ul {
+        flex-direction: column;
+        background-color: rgb(255, 0, 119);
+        text-align: center;
+    }
+    li{
+        border-bottom:1px dashed #fff;
+    }
+}
+@media screen and (max-width:757px) {
+    nav ul {
+        flex-direction: column;
+        background-color: rgb(10, 110, 224);
+        text-align: center;
+    }
+    li{
+        border-bottom:1px dashed #fff;
+    }
+}

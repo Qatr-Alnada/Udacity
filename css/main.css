@@ -1,0 +1,84 @@
+@import url(./css/footer.css);
+@import url(./css/blog.css);
+@import url(./css/header.css);
+@import url(./css/more.css);
+
+body{
+    margin: 0%;
+}
+
+.flex-container {
+    display:flex;
+    background-color: #a9b2bb;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+} /*
+.flex-items {
+      margin: 20px;
+      width: 250px;
+      border: 2px solid pink;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      background-color: #a9aca3; 
+}*/
+ 
+  img {
+    max-width: 100%;
+  }
+  button {
+    width: 100px;
+    border-radius: 12px;
+    background-color: #acadad;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 1em;
+    margin: 20px;
+    width: 250px;
+    border: 2px solid pink;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    background-color: #a9aca3; 
+    
+  }
+  .card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  
+  
+  .card__footer {
+    display: flex;
+    padding: 1rem;
+    margin-bottom: auto;
+  }
+  
+  .user {
+    display: flex;
+    gap: .5rem;
+  }
+  
+  .user img {
+    margin-left: 0%;
+    width: 80px;
+    border-radius: 50%;
+  }
+  
+  .user small {
+    color: #666;
+  }
+section {
+    margin: 5%;
+}
+
+
+    
